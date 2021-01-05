@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <form action="/desc" method="post" autocomplete="off">
+            <div class="col-40">
+                <input type="text" name="desc" placeholder="Item Purchased" required>
+                <input type="text" name="price" placeholder="Rs.." required style="margin-top: 1.5%;">
+                <button type="submit" name="addDesc">+</button>
+            </div>
+        </form>
+        <ol>
+            <th>Description</th>
+            <% for(var i=0; i < desc.length; i++) { %>
+                <li>
+                    <%= desc[i] %>
+                    <%= price[i] %>
+                </li>
+                <% } %>
+        </ol>
+    </div>
+    <button type="submit" value="printPdf">Download PDF</button>
+</body>
+</html>

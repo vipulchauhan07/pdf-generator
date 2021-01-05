@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form </title>
+    <link rel="stylesheet" href="/css/field.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Form for the Billing Company/Client</h1>
+    <form action="/" method="post" autocomplete="off">
+    <div class="row">
+        <div class="col-25">
+            <label for="companyName">Company Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="company" placeholder=" Enter Company Name" required> <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="address">Address</label>
+        </div>
+        <div class="col-75">
+            <textarea name="address" id="address" placeholder="Enter Address" cols="30" rows="10"></textarea> <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="pan">PAN</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="pan" placeholder="Enter PAN" required> <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="gst">GST</label>
+        </div>
+        <div class="col-25">
+            <input type="text" name="gst" placeholder="Enter GST" required> <br>
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+</html>
