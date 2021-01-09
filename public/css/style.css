@@ -1,0 +1,61 @@
+body {
+    font-size: 12pt;
+    font-family: Garamond;
+}
+span {
+    font-family: Garamond, serif;
+    border: 0;
+}
+
+img {
+    widows: 137px;
+    height: 59px;
+}
+
+#company-name {
+    font-size: xx-large;
+}
+
+
+#thanks {
+    color: #4472c4;
+    text-align:center;
+}
+
+.special {
+    font-size: large;
+}
+
+#invoice-date {
+    text-align: right;
+}
+
+.details {
+    display: inline-flex;
+}
+
+.details .left-block p {
+    text-align: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.details .right-block {
+    text-align: right;
+    margin-left: 400px;
+}
+
+.client-details p{
+    margin: 0%;
+}
+
+table, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* height: 12px; */
+}
+
+/* th {
+    font-size: x-large;
+    color:#515052;
+    padding: 5px;
+} */ 

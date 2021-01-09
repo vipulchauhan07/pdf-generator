@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../views/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <p><img src="/images/icon.png" alt="" name="Picture 1" /></p>
+    <p><img src="images/icon.png" alt="" name="Picture 1" /></p>
     <p><span id="company-name">ANUBUDH EDUCATIONAL SERVICES LLP.</span></p>
     <div class="details">
         <div class="left-block">
@@ -16,60 +16,60 @@
                 GST: 09ABPFA6892G1ZT <br>
                 PAN: ABPFA6892G</p>
         </div>
-        <div class="right-block">Invoice:20/10/2020</div>
+        <div class="right-block">Invoice: <%= invoice_format %></div>
     </div>
     <p><span>To,</span></p>
     <div class="client-details">
-        <p><span><%= {company_name}</span></p>
-        <p><%= address %></p>
+        <p><span>
+                <%= company_name %>
+            </span>
+        </p>
+        <p>
+            <%= address %>
+        </p>
         <p><span>PAN: <%= pan %></span></p>
         <p><span>GST: <%= gst %></span></p>
     </div>
-    <p>&nbsp;</p>
-    <table style="width: 100%;">
-        <tr style="text-align: center;">
-            <td>Description</td>
-            <td>Price</td>
-        </tr>
-        <tr>
-            <td>
-                Documentation &amp; Wireframing  50%
-                
-            </td>
-            <td>
-                ₹ 20,000
-            </td>
-        </tr>
-        <tr>
-            <td>
-                 IGST 18%
-            </td>
-            <td>
-                ₹ 3600
-            </td>
-        </tr>
-        <tr>
-            <td>
-                TOTAL
-            </td>
-            <td>
-                ₹ 23,600
-            </td>
-        </tr>
-    </table>
+    <div>
+        <div style="text-align: center; padding-left: 50px;">
+            <table>
+                <td>Description</td>
+                <td>Price</td>
+                <% if (desc.length> 0) { %>
+                    <% for(var i=0; i < desc.length; i++) { %>
+                        <tr>
+                            <td>
+                                <%= desc[i] %>
+                            </td>
+                            <td>
+                                <%= price[i] %>
+                            </td>
+                        </tr>
+                        <% }%>
+                            <% }%>
+                            <tr>
+                                <td>GST <%= gst%></td>
+                                <td><%= gstPrice%></td>
+                            </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td><%= total%></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
     &nbsp;
     <p><span>Company&rsquo;s bank details<br /> Bank Name: HDFC bank<br /> A/C no: 50200044201560<br /> IFSC code:
-            HDFC0000278<br /> Name: ANUBUDH EDUCATIONAL SERVICES LLP VINEITH KAUL  <br>
+            HDFC0000278<br /> Name: ANUBUDH EDUCATIONAL SERVICES LLP VINEITH KAUL <br>
             GST: 09ABPFA6892G1ZT
         </span></p>
     <p><span>If you have any questions concerning this invoice, contact <br>
-    Vineith Kaul | +91 6006040918 | vineith.kaul@anubudh.com </span></p>
+            Vineith Kaul | +91 6006040918 | vineith.kaul@anubudh.com </span></p>
     <p>&nbsp;</p> -->
     <p id="thanks" class="special"><span><strong>THANK YOU FOR YOUR BUSINESS.</strong></span></p>
     <p>&nbsp;</p>
-    <img src="sign.png" alt="sign">
+    <img src="images/sign.png" alt="sign">
     <p><span class="special">Vineith Kaul <br>
-    13<sup>th</sup>November 2020<span> </p>
+            13<sup>th</sup>November 2020<span> </p>
 </body>
-
 </html>

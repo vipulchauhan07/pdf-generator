@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="   css/field.css">
     <title>Document</title>
 </head>
 <body>
@@ -10,7 +11,7 @@
         <form action="/desc" method="post" autocomplete="off">
             <div class="col-40">
                 <input type="text" name="desc" placeholder="Item Purchased" required>
-                <input type="text" name="price" placeholder="Rs.." required style="margin-top: 1.5%;">
+                <input type="number" name="price" placeholder="Rs.." required style="margin-top: 1.5%;">
                 <button type="submit" name="addDesc">+</button>
             </div>
         </form>
@@ -24,6 +25,6 @@
                 <% } %>
         </ol>
     </div>
-    <button type="submit" value="printPdf">Download PDF</button>
+    <a href="/generateReport" > Download pdf</a>
 </body>
 </html>

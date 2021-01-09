@@ -11,41 +11,55 @@
 <body>
     <h1 style="text-align: center;">Form for the Billing Company/Client</h1>
     <form action="/" method="post" autocomplete="off">
-    <div class="row">
-        <div class="col-25">
-            <label for="companyName">Company Name</label>
+        <div class="row">
+            <div class="col-25">
+                <label for="companyName">Company Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="company" placeholder=" Enter Company Name" required autofocus> <br>
+            </div>
         </div>
-        <div class="col-75">
-            <input type="text" name="company" placeholder=" Enter Company Name" required> <br>
+        <div class="row">
+            <div class="col-25">
+                <label for="address">Address</label>
+            </div>
+            <div class="col-75">
+                <textarea name="address" id="address" placeholder="Enter Address" cols="30" rows="10"></textarea> <br>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-25">
-            <label for="address">Address</label>
+        <div class="row">
+            <div class="col-25">
+                <label for="pan">PAN</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="pan" placeholder="Enter PAN" required autocapitalize="characters"> <br>
+            </div>
         </div>
-        <div class="col-75">
-            <textarea name="address" id="address" placeholder="Enter Address" cols="30" rows="10"></textarea> <br>
+        <div class="row">
+            <div class="col-25">
+                <label for="gst">GST</label>
+            </div>
+            <div class="col-25">
+                <input type="text" name="gst" placeholder="Enter GST" required> <br>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-25">
-            <label for="pan">PAN</label>
+        <div class="row">
+            <div class="col-25">
+                <label for="year">Year</label>
+            </div>
+                    <select name="year">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
         </div>
-        <div class="col-75">
-            <input type="text" name="pan" placeholder="Enter PAN" required> <br>
+        <div class="row">
+            <input type="submit" value="Submit">
         </div>
-    </div>
-    <div class="row">
-        <div class="col-25">
-            <label for="gst">GST</label>
-        </div>
-        <div class="col-25">
-            <input type="text" name="gst" placeholder="Enter GST" required> <br>
-        </div>
-    </div>
-    <div class="row">
-        <input type="submit" value="Submit">
-    </div>
     </form>
 </body>
+
 </html>
